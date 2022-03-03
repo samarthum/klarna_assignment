@@ -1,6 +1,6 @@
 FROM python:3.7
 
-RUN pip install fastapi uvicorn sklearn xgboost pandas
+RUN pip install fastapi uvicorn scikit-learn xgboost pandas
 
 COPY ./src /api/src
 
@@ -10,4 +10,4 @@ WORKDIR /api
 EXPOSE 8000
 
 ENTRYPOINT ["uvicorn"]
-CMD ["api.main:app", "--host", "0.0.0.0"]
+CMD ["src.app:app", "--host", "0.0.0.0"]
