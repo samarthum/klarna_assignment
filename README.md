@@ -13,3 +13,13 @@ Since I had to create an end-to-end to solution in a limited amount of time, I d
 
 - For the class imbalance, I ended up going ahead with Random Undersampling, where the majority class was undersampled to be of equal size to the minority class making it a 50-50 split. The reason for going ahead with this was that the XGBoost seemed to overfit the data the least here.
 
+- The model and other related variables were saved as .pkl files and then the model was served as an API using the FastAPI framework.
+
+- Docker has been used to containerize the whole prediction ecosystem. 
+
+- The model has been deployed using an AWS EC2 instance. 
+
+## API Endpoint
+
+- The API endpoint of the above model is http://35.171.30.75:8000/predict
+- Making a post request with a JSON containing all the features (that are present in the test set) will return a prediction for that particular customer. 
