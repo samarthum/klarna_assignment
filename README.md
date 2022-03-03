@@ -5,6 +5,11 @@ This is the repository containing the solution for the take home assignment.
 The problem is of credit default prediction. As is typical in such problems, the target variable 'default' was highly imabalanced with only 1.5% defaults. 
 Since I had to create an end-to-end to solution in a limited amount of time, I didn't spend too much time on optimising all possible parts of the process. 
 
+## File Structure
+
+- The analysis and model building is contained in the notebooks/ folder. The EDA notebook has a very basic EDA process, and the Baseline notebook builds a simple model using Random Undersampling. 
+- The code for the API as well as the model files are contained in the src/ folder.
+
 ## Approach 
 
 - A very basic, high-level EDA was performed to check between-feature correlation, and also correlation of all features with the target variable. 
