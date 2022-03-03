@@ -9,7 +9,7 @@ Since I had to create an end-to-end to solution in a limited amount of time, I d
 
 - A very basic, high-level EDA was performed to check between-feature correlation, and also correlation of all features with the target variable. 
 
-- Then, I also looked at the missing values and the pattern of missing values. It looked like the missing values were not missing completely at random, and they had some pattern to them. Since I didn't have more access to the domain understanding of each feature, I decided not to fill up the nulls. Instead, I used XGBoost for making the prediction, which accepts datasets with null values. 
+- Then, I looked at the missing values and the pattern of missing values. It looked like the missing values were not missing completely at random, and they had some pattern to them. Since I didn't have more access to the domain understanding of each feature, I decided not to fill up the nulls. Instead, I used XGBoost for making the prediction, which accepts datasets with null values. 
 
 - For the class imbalance, I ended up going ahead with Random Undersampling, where the majority class was undersampled to be of equal size to the minority class making it a 50-50 split. The reason for going ahead with this was that the XGBoost seemed to overfit the data the least here.
 
