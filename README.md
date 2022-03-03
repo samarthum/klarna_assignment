@@ -45,5 +45,6 @@ This would mean setting a probability threshold that's on the higher side (highe
 ## API Endpoint
 
 - The API endpoint of the above model is http://35.171.30.75:8000/predict
+
 Since FastAPI was used, http://35.171.30.75:8000/docs can be access to get more information about the features, and we can also make a post request within the browser. 
 - Making a post request with a JSON containing all the features (that are present in the test set) will return a prediction for that particular customer. 
