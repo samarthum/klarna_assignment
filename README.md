@@ -13,6 +13,16 @@ Since I had to create an end-to-end to solution in a limited amount of time, I d
 
 - For the class imbalance, I ended up going ahead with Random Undersampling, where the majority class was undersampled to be of equal size to the minority class making it a 50-50 split. The reason for going ahead with this was that the XGBoost seemed to overfit the data the least here.
 
+## Evaluation
+
+- Since this was a class-imbalanced problem, I decided to do away with a simple accuracy metric to judge the efficacy of the model. 
+- Instead, I looked at Precision, Recall and F1 Score. 
+- These values can be optimised by choosing the most optimal probability threshold for the model prediction probability. 
+- The probability threshold can be chosen based on the business use-case. Here, since we're detecting credit defaults, we might want to prioritise precision over recall as we don't want to wrongly predict default multiple times. This would lead to poor customer experience. 
+This would mean setting a probability threshold that's on the higher side (higher than the 0.015 ratio of the positive class)
+
+## Deployment
+
 - The model and other related variables were saved as .pkl files and then the model was served as an API using the FastAPI framework.
 
 - Docker has been used to containerize the whole prediction ecosystem. 
