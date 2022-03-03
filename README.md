@@ -19,6 +19,13 @@ Since I had to create an end-to-end to solution in a limited amount of time, I d
 
 - For the class imbalance, I ended up going ahead with Random Undersampling, where the majority class was undersampled to be of equal size to the minority class making it a 50-50 split. The reason for going ahead with this was that the XGBoost seemed to overfit the data the least here.
 
+## Possible Improvements
+
+- More time can definitely spent on understanding why the missing values are present, and how they can be dealt with sensibly. There was strong correlation between the missing values as can be seen in the EDA notebook, which means some domain related information about how the features were created could help. 
+- With a dataset where the missing values are dealt with sensibly, we could run systematic experiments to compare the effects of the different techniques of dealing with class imbalance. 
+- Random search, or grid search, could be performed to optimise model hyperparameters. We could also try out more advanced techniques such as Bayesian Optimisation.
+- Different model types, stacking could have also been tried. 
+
 ## Evaluation
 
 - Since this was a class-imbalanced problem, I decided to do away with a simple accuracy metric to judge the efficacy of the model. 
