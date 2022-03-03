@@ -9,6 +9,7 @@ Since I had to create an end-to-end to solution in a limited amount of time, I d
 
 - The analysis and model building is contained in the notebooks/ folder. The EDA notebook has a very basic EDA process, and the Baseline notebook builds a simple model using Random Undersampling. 
 - The code for the API as well as the model files are contained in the src/ folder.
+- The model predictions for the test set are contained in the results.csv file.
 
 ## Approach 
 
