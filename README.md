@@ -21,7 +21,7 @@ Since I had to create an end-to-end to solution in a limited amount of time, I d
 
 ## Possible Improvements
 
-- More time can definitely spent on understanding why the missing values are present, and how they can be dealt with sensibly. There was strong correlation between the missing values as can be seen in the EDA notebook, which means some domain related information about how the features were created could help. 
+- More time can definitely be spent on understanding why the missing values are present, and how they can be dealt with sensibly. There was strong correlation between the missing values as can be seen in the EDA notebook, which means some domain related information about how the features were created could help. 
 - With a dataset where the missing values are dealt with sensibly, we could run systematic experiments to compare the effects of the different techniques of dealing with class imbalance. 
 - Random search, or grid search, could be performed to optimise model hyperparameters. We could also try out more advanced techniques such as Bayesian Optimisation.
 - Different model types, stacking could have also been tried. 
